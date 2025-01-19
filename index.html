@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b6e1df77c5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul id="sideMenu">
+                    <i class="fa-regular fa-circle-xmark menu-icon" onclick="closeMenu()"></i>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars menu-icon" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Front-End Developer</p>
+                <h1>Hi, I'm Kim Cyrene <br> Santiago</h1>
+            </div>
+        </div> 
+    </div>
+    <div>
+        <button id="backToTop" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+<!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/me.JPG" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>
+                        Hello! I am an aspiring front-end developer with a strong foundation in web and mobile development, thanks to my degree in Bachelor of Science in Information Technology. My journey in the tech world has been fueled by a deep passion for creating visually stunning, user-friendly websites and applications that make a real impact.
+                        <br><br>
+                        During my studies, I specialized in web and mobile development, where I honed my skills in HTML, CSS, JavaScript, and responsive design. I love the creative process of bringing designs to life, making ideas functional, and ensuring every user has a seamless experience.
+                        <br><br>
+                        My goal is to become a front-end developer who bridges the gap between great design and exceptional functionality. I’m excited to grow, learn, and contribute to projects that challenge me to push the boundaries of what’s possible in user interface and user experience design.
+                    </p>
+                   
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android app</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>August 2024 - January 2025</span><br>HR staff <br> Tarlac Provincial Hospital</li>
+                            <li><span> </span><br> </li>
+                            <li><span> </span><br> </li>
+                            <li><span> </span><br> </li>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024</span><br>Tarlac State University <br> Bachelor of Science in Information Technology - <i>Cum-laude</i></li>
+                            <li><span>2020</span><br>STI College Tarlac <br> TVL - Mobile and Web Development</li>
+                            <li><span>2018</span><br>San Manuel High School - with honors</li>
+                            <li><span>2014</span><br>San Manuel Elementary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--SERVICE-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web and Application Design</h2>
+                    <p>
+                        I utilize a diverse range of advanced tools and technologies to design and develop dynamic, responsive, and high-performing websites and applications.
+                    </p>
+                    <br>
+                    <img src="image/html.png" class="icon">
+                    <img src="image/css.png" class="icon">
+                    <img src="image/javascript.png" class="icon"> <br>
+                    <img src="image/github.png" class="icon">
+                    <img src="image/unity.png" class="icon">
+                    <img src="image/androidstudio.png" class="icon">
+                        
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>"To create visually engaging and user-focused designs for both web and mobile applications, I use these tools to create wireframes, prototypes, and UI designs that emphasize usability and aesthetics."</p>
+                    <br>
+                    <img src="image/figma.webp" class="icon">
+                    <img src="image/canva.png" class="icon">
+                    <img src="image/picart.png" class="icon">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--PORTFOLIO-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/pic3.svg" alt="">
+                    <div class="layer">
+                        <h2>Wireframes and Mockups using Figma</h2><br>
+                        <p>Sample wireframes and mockups using figma</p>
+                        <a href="https://www.figma.com/design/Ch7OfbqDcVMM6rbqGgIRNp/Wireframes-and-Mockups?m=auto&t=oczON1kSAdBcVWV6-6" class="btn btn2">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pic2.svg" alt="">
+                    <div class="layer">
+                        <h2>Graphic Design using Canva</h2><br>
+                        <p>Here are my samples design using canva. There are logos and other graphic design that I have design for our business purposes.</p>
+                        <a href="https://www.figma.com/design/m1RPVkiWqoYErzdYlGWqmr/Design-using-Canva?m=auto&t=SNg3ivbNKpBgsbsg-6" class="btn btn2">View</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pic1.svg" alt="">
+                    <div class="layer">
+                        <h2>TarlaqueKnows</h2><br>
+                        <p>Capstone Project: A 2D mobile application showcasing the culture and traditions of Tarlac province. Features include an informational section covering history, culture, tourist spots, food, and delicacies. The app offers a 360-degree static view of tourist destinations for a virtual experience. Additionally, it includes three mini-games: a quiz, puzzle, and "guess the picture" game to test users' knowledge of Tarlac's culture.</p><br>
+                        <p>For the full project, visit our GitHub: <a href="https://github.com/Xavier00000/TarlaqueKnows-Unity">TarlaqueKnows-Unity</a></p> <br>
+                        <p>To explore the UI, click the button below.</p>
+                        <a href="https://www.figma.com/design/5X0lXfSiwtrm3Wo8npwYMA/Capstone-Project%3A-TarlacqueKnows-UI?m=auto&t=HqFxjAhDHZIgLGpH-6" class="btn btn2">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--CONTACT-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>santiagokimcyrene@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>(+63) 912 335 1149</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/kimsantiagoreal/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://discord.com/invite/REhCeTNP"><i class="fa-brands fa-discord"></i></i></a>
+                        <a href="https://www.linkedin.com/in/kim-cyrene-santiago-224184315?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa-brands fa-linkedin"></i></i></a>
+
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="copyright">
+            <p>Copyright © Kim Santiago 2025</p>
+        </div> -->
+    </div>
+
+<!--SCRIPT-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sideMenu = document.getElementById("sideMenu");
+
+        function openMenu(){
+            sideMenu.style.right = "0";
+        }
+
+        function closeMenu(){
+            sideMenu.style.right = "-200px";
+        }
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx50buKWCVN8Zbrh9RbPzDGKM7KJSai4mjyPROj7RZTxJbA1yO4KMiBfHUKVHIasN9Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function() {
+                        msg.innerHTML = ""
+                    },5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+        const backToTopBtn = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.style.display = "block"; 
+            } else {
+                backToTopBtn.style.display = "none"; 
+            }
+        });
+
+        
+        backToTopBtn.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+</body>
+</html>
